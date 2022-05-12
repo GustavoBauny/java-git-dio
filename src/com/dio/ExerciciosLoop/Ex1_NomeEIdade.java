@@ -1,4 +1,4 @@
-package com.dio;
+package com.dio.ExerciciosLoop;
 import java.util.Scanner;
 
 public class Ex1_NomeEIdade {
