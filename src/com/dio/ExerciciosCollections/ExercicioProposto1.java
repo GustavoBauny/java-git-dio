@@ -20,8 +20,7 @@ public class ExercicioProposto1 {
             while (true) {
                 if (count == 6) break;
 
-                System.out.print("Digite a temperatura de janeiro: ");
-                System.out.print("\nDigite a temperatura de fevereiro: ");
+                System.out.print("Digite a temperatura: ");
                 double temp = scan.nextDouble();
                 temperaturas.add(temp);
                 count++;
