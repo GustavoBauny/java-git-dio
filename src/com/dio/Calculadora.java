@@ -10,17 +10,17 @@ public class Calculadora {
         double num1, num2;    
         try (Scanner input = new Scanner(System.in)) {
 			do {
-			     System.out.println("Digite a operacao desejada:");
+			     System.out.println("Digite a operação desejada:");
 			     System.out.println("  1. Soma");      
-			     System.out.println("  2. Subtracao");      
-			     System.out.println("  3. Multiplicacao");      
-			     System.out.println("  4. Divisao");      
+			     System.out.println("  2. Subtração");      
+			     System.out.println("  3. Multiplicação");      
+			     System.out.println("  4. Divisão");      
 			     System.out.println("  0. Sair");
 			     System.out.print("Operacao: ");
 			     operacao = input.nextShort();
 			     
 			     if (operacao == 0) {
-			    	 System.out.println("Bye bye!");
+			    	 System.out.println("Programa encerrado.");
 			    	 break;
 			     }
 			     
@@ -38,7 +38,7 @@ public class Calculadora {
 			    	 continue;
 			     }
 			
-			     System.out.println("RESULTADO: O resultado da operacao " + getNomeOperacao(operacao) + " eh " + Calcular(operacao, num1, num2) + "\n");
+			     System.out.println("RESULTADO: O resultado da operação " + getNomeOperacao(operacao) + " é " + Calcular(operacao, num1, num2) + "\n");
 			} while (operacao != 0);
 		}
     }
@@ -65,7 +65,7 @@ public class Calculadora {
     static boolean OperacaoExiste (short operacao) {
        	boolean retorno = true;
     	if (operacao > 4) {
-       		System.out.println("ERRO: Operacao escolhida eh invalida.\n");
+       		System.out.println("ERRO: Operacao escolhida é inválida.\n");
        		retorno = false;
        	}
     	return retorno;
@@ -74,7 +74,7 @@ public class Calculadora {
     static boolean ValidaDadosDeEntrada (short operacao, double num1, double num2) {
     	boolean retorno = true; 
     	if (operacao == 4 & num2 == 0) {
-        	 System.out.println("ERRO: Divisor nao pode ser zero.\n");
+        	 System.out.println("ERRO: Divisor não pode ser zero.\n");
         	 retorno = false;
         }
     	return retorno;
