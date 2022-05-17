@@ -24,7 +24,7 @@ public class Salarios {
             ganhaMaisq2SalMin = false;
         }
         }
-        System.out.println("A quantidade de funcionários que ganha mais de dois salários mínimos é de: " + contador);
+        System.out.println("A quantidade de funcionários que ganha mais de dois salários mínimos é: " + contador);
         }
     }
 }
