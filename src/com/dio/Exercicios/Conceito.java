@@ -9,7 +9,6 @@ Nota Conceito
 De 0,0 a 4,9 C
 De 5,0 a 8,9 B
 De 9,0 a 10,0 A
-
 Deverá apresentar a quantidade de alunos que tiveram conceito A, B e C.
 */
 
