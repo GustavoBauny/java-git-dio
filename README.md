@@ -6,3 +6,5 @@
 [Repositório da aula (Collections)](https://github.com/cami-la/curso-dio-intro-collections)
 <br/>
 [Repositório da aula (Debugging)](https://github.com/cami-la/debugging-java)
+<br/>
+[Repositório da aula (Exceptions)](https://github.com/cami-la/exceptions-java)
