@@ -10,18 +10,15 @@ public class Salarios {
     public static void main(String[] args) {
         try (Scanner scan = new Scanner(System.in)) {
             final double salarioMin = 870;
-            boolean ganhaMaisq2SalMin;
             int contador = 0;
         for (int i = 1; i <= 10; i++){
             System.out.println("Digite o salário do funcionário: ");
             double salario = scan.nextDouble();
         
         if (salario > (salarioMin * 2)){
-            ganhaMaisq2SalMin = true;
             contador += 1;
         }
         else{
-            ganhaMaisq2SalMin = false;
         }
         }
         System.out.println("A quantidade de funcionários que ganha mais de dois salários mínimos é: " + contador);

@@ -12,17 +12,13 @@ public class Aprovados {
         try (Scanner scan = new Scanner(System.in)) {
             final double media = 60;
             int totalAprovados = 0;
-            boolean aprovado;
-            
-        for(int i = 1; i <= 10; i++){
+            for(int i = 1; i <= 10; i++){
             System.out.println("Digite a nota do aluno: ");
             double nota = scan.nextDouble();
         
         if (nota<media){
-            aprovado = false;
         }
         else if(nota>=media){
-            aprovado = true;
             totalAprovados += 1;
         }
 

@@ -12,9 +12,7 @@ public class Clientes {
     public static void main(String[] args) {
         try (Scanner scan = new Scanner(System.in)) {
             int totalGorjetas = 0;
-            boolean gorjeta;
-            
-        for(int i = 1; i <= 10; i++){
+            for(int i = 1; i <= 10; i++){
             System.out.println("Digite o valor da conta: ");
             double valorConta = scan.nextDouble();
 
@@ -22,10 +20,8 @@ public class Clientes {
             double valorPago = scan.nextDouble();
 
         if (valorConta == valorPago){
-            gorjeta = false;
         }
         else if(valorConta < valorPago){
-            gorjeta = true;
             totalGorjetas += 1;
         }
         else{
