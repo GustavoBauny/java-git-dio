@@ -100,7 +100,7 @@ public class User implements Serializable{
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		_User other = (_User) obj;
+		User other = (User) obj;
 		return Objects.equals(id, other.id);
 	}
 }

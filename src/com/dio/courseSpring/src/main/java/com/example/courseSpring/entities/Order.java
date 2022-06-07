@@ -34,7 +34,7 @@ public class Order implements Serializable {
 
 	@ManyToOne // Criará chave estrangeira de Muitos p/ Um
 	@JoinColumn(name = "client_id") // Nome que terá a chave estrangeira
-	private _User client;
+	private User client;
 	
 	@OneToMany(mappedBy = "id.order")
 	private Set<OrderItem> items = new HashSet<>();
@@ -43,7 +43,7 @@ public class Order implements Serializable {
 
 	}
 
-	public Order(Long id, Instant moment, OrderStatus orderStatus, _User client) {
+	public Order(Long id, Instant moment, OrderStatus orderStatus, User client) {
 		super();
 		this.id = id;
 		this.moment = moment;
@@ -77,11 +77,11 @@ public class Order implements Serializable {
 		}
 	}
 
-	public _User getClient() {
+	public User getClient() {
 		return client;
 	}
 
-	public void setClient(_User client) {
+	public void setClient(User client) {
 		this.client = client;
 	}
 	

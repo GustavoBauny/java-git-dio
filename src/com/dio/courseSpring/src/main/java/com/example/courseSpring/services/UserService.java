@@ -6,7 +6,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.courseSpring.entities._User;
+import com.example.courseSpring.entities.User;
 import com.example.courseSpring.repositories.UserRepository;
 
 @Service
@@ -15,12 +15,12 @@ public class UserService {
 	@Autowired
 	private UserRepository repository;
 	
-	public List<_User> findAll() {
+	public List<User> findAll() {
 		return repository.findAll();
 	}
 	
-	public _User findById(Long id) {
-		Optional<_User> obj = repository.findById(id);
-		return obj.get();
+	public boolean findById(Long id) {
+		Optional<User> obj = repository.findById(id);
+		return obj.isPresent();
 	}
 }
